@@ -14,14 +14,14 @@ class SitioController extends Controller
     public function contacto($codigo = null){
 
         if($codigo == '1234'){
-            $nombre = "Fercho";
+            $name = "Fercho";
             $email = "fer@gmail.com";
         }
         else{
-            $nombre = "";
+            $name = "";
             $email = "";
         }
-        return view('contacto', compact('nombre', 'email', 'codigo'));
+        return view('contacto', compact('name', 'email', 'codigo'));
     }
 
     public function landingpage(){

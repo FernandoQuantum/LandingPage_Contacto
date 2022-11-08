@@ -22,7 +22,7 @@
     <form id="survey-form" action="/recepcion-validacion" method="POST">
         @csrf
         <label id="name-label" for="name">Name</label>
-        <input id="name" type="text" placeholder="Enter your name" name="name" value = {{$nombre}}>
+        <input id="name" type="text" placeholder="Enter your name" name="name" value = {{$name}}>
 
         <label id="email-label" for="email">Email</label>
         <input id="email" type="text" placeholder="example@gmail.com" name="email" value= {{$email}}>
